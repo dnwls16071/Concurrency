@@ -27,6 +27,12 @@ dependencies {
 	// 편의를 위해 롬복을 추가
 	compileOnly 'org.projectlombok:lombok:1.18.22'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+	// 레디스
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	
+	// 레디슨
+	implementation group: 'org.redisson', name: 'redisson-spring-boot-starter', version: '3.36.0'
 }
 
 tasks.named('test') {
